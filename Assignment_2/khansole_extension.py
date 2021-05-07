@@ -82,7 +82,7 @@ def main(): # defines main function of the script
             num2 = random.randint(MIN_NUMBER, MAX_NUMBER) # generates a random int between 10 and 99
             num3 = num1 / num2 # adds random int generated above
             print("What is " + str(num1) + " / " + str(num2) + "?")
-            user_num = int(input("Your answer: "))
+            user_num = float(input("Your answer: "))
             if user_num == num3: # evaluates if the user answer is correct
                 guess = guess + 1 # if correct, then guess + 1 (i.e, 1 answer is correct) 
                 print("Correct! You've gotten " + str(guess) + " correct in a row.")
